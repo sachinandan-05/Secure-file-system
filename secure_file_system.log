@@ -1,0 +1,185 @@
+2025-04-27 19:04:21,547 - SecureFileSystem - INFO - Created storage directory: secure_files
+2025-04-27 19:04:21,547 - SecureFileSystem - WARNING - Using a new untrained model. This is not recommended for production.
+2025-04-27 19:04:21,624 - SecureFileSystem - INFO - Demo model trained (NOT FOR PRODUCTION USE)
+2025-04-27 19:04:21,624 - SecureFileSystem - INFO - Secure File System initialized
+2025-04-27 19:04:32,713 - SecureFileSystem - WARNING - Using a new untrained model. This is not recommended for production.
+2025-04-27 19:04:32,785 - SecureFileSystem - INFO - Demo model trained (NOT FOR PRODUCTION USE)
+2025-04-27 19:04:32,785 - SecureFileSystem - INFO - Secure File System initialized
+2025-04-27 19:06:27,691 - SecureFileSystem - WARNING - Using a new untrained model. This is not recommended for production.
+2025-04-27 19:06:27,763 - SecureFileSystem - INFO - Demo model trained (NOT FOR PRODUCTION USE)
+2025-04-27 19:06:27,763 - SecureFileSystem - INFO - Secure File System initialized
+2025-04-27 19:12:52,346 - SecureFileSystem - WARNING - Using a new untrained model. This is not recommended for production.
+2025-04-27 19:12:52,416 - SecureFileSystem - INFO - Demo model trained (NOT FOR PRODUCTION USE)
+2025-04-27 19:12:52,416 - SecureFileSystem - INFO - Secure File System initialized
+2025-04-27 19:12:52,457 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-27 19:12:52,457 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-27 19:12:52,458 - werkzeug - INFO -  * Restarting with stat
+2025-04-27 19:12:53,280 - SecureFileSystem - WARNING - Using a new untrained model. This is not recommended for production.
+2025-04-27 19:12:53,348 - SecureFileSystem - INFO - Demo model trained (NOT FOR PRODUCTION USE)
+2025-04-27 19:12:53,348 - SecureFileSystem - INFO - Secure File System initialized
+2025-04-27 19:12:53,367 - werkzeug - WARNING -  * Debugger is active!
+2025-04-27 19:12:53,379 - werkzeug - INFO -  * Debugger PIN: 137-465-064
+2025-04-27 19:12:57,514 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 19:12:57] "GET / HTTP/1.1" 200 -
+2025-04-27 19:12:58,115 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 19:12:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-27 19:13:23,024 - SecureFileSystem - INFO - Processing file: OM CN Lab File - Google Docs.pdf (application/pdf, 2467049 bytes)
+2025-04-27 19:13:23,207 - SecureFileSystem - INFO - Malware scan result: Safe (Probability: 0.34)
+2025-04-27 19:13:23,264 - SecureFileSystem - INFO - File encrypted successfully (Size: 2467049 → 2467088)
+2025-04-27 19:13:23,265 - SecureFileSystem - INFO - Saved file index with 1 entries
+2025-04-27 19:13:23,265 - SecureFileSystem - INFO - File safely encrypted and stored: OM CN Lab File - Google Docs.pdf → 2c44ca2b7323cf2cdc17171c1c0f844f8b7cb36fb58988f66aa8120fecbb6156.enc
+2025-04-27 19:13:23,265 - SecureFileSystem - INFO - File 'OM CN Lab File - Google Docs.pdf' encrypted with key: 1234
+2025-04-27 19:13:23,267 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 19:13:23] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-04-27 19:13:23,272 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 19:13:23] "GET / HTTP/1.1" 200 -
+2025-04-27 19:13:27,206 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 19:13:27] "GET /file_details/2c44ca2b7323cf2cdc17171c1c0f844f8b7cb36fb58988f66aa8120fecbb6156.enc HTTP/1.1" 200 -
+2025-04-27 19:13:32,762 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 19:13:32] "GET / HTTP/1.1" 200 -
+2025-04-27 19:13:39,474 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 19:13:39] "[32mPOST /set_password HTTP/1.1[0m" 302 -
+2025-04-27 19:13:39,477 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 19:13:39] "GET / HTTP/1.1" 200 -
+2025-04-27 19:13:43,282 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 19:13:43] "GET /file_details/2c44ca2b7323cf2cdc17171c1c0f844f8b7cb36fb58988f66aa8120fecbb6156.enc HTTP/1.1" 200 -
+2025-04-27 19:13:45,733 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 19:13:45] "GET /view_logs HTTP/1.1" 200 -
+2025-04-27 19:13:48,782 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 19:13:48] "GET / HTTP/1.1" 200 -
+2025-04-27 19:13:55,609 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 19:13:55] "GET / HTTP/1.1" 200 -
+2025-04-27 19:14:33,727 - SecureFileSystem - INFO - File decrypted successfully (Size: 2467088 → 2467049)
+2025-04-27 19:14:33,728 - SecureFileSystem - INFO - File retrieved and decrypted: 2c44ca2b7323cf2cdc17171c1c0f844f8b7cb36fb58988f66aa8120fecbb6156.enc → OM CN Lab File - Google Docs.pdf
+2025-04-27 19:14:33,728 - SecureFileSystem - INFO - File 'OM CN Lab File - Google Docs.pdf' (ID: 2c44ca2b7323cf2cdc17171c1c0f844f8b7cb36fb58988f66aa8120fecbb6156.enc) decrypted with key: 1234
+2025-04-27 19:14:33,735 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 19:14:33] "GET /download/2c44ca2b7323cf2cdc17171c1c0f844f8b7cb36fb58988f66aa8120fecbb6156.enc HTTP/1.1" 200 -
+2025-04-27 19:14:46,565 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 19:14:46] "GET / HTTP/1.1" 200 -
+2025-04-27 19:14:53,834 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 19:14:53] "GET /file_details/2c44ca2b7323cf2cdc17171c1c0f844f8b7cb36fb58988f66aa8120fecbb6156.enc HTTP/1.1" 200 -
+2025-04-27 19:14:58,038 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 19:14:58] "GET / HTTP/1.1" 200 -
+2025-04-27 19:15:41,430 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 19:15:41] "GET /file_details/2c44ca2b7323cf2cdc17171c1c0f844f8b7cb36fb58988f66aa8120fecbb6156.enc HTTP/1.1" 200 -
+2025-04-27 19:16:06,408 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 19:16:06] "GET / HTTP/1.1" 200 -
+2025-04-27 19:16:19,866 - SecureFileSystem - INFO - Processing file: final.pdf (application/pdf, 2467049 bytes)
+2025-04-27 19:16:20,051 - SecureFileSystem - INFO - Malware scan result: Safe (Probability: 0.34)
+2025-04-27 19:16:20,093 - SecureFileSystem - INFO - File encrypted successfully (Size: 2467049 → 2467088)
+2025-04-27 19:16:20,096 - SecureFileSystem - INFO - Saved file index with 2 entries
+2025-04-27 19:16:20,096 - SecureFileSystem - INFO - File safely encrypted and stored: final.pdf → d986ce462bfa828d595d39e73d11cd820a763b7d4afd8b51aebbc1aaa178451a.enc
+2025-04-27 19:16:20,096 - SecureFileSystem - INFO - File 'final.pdf' encrypted with key: 2345
+2025-04-27 19:16:20,097 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 19:16:20] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-04-27 19:16:20,101 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 19:16:20] "GET / HTTP/1.1" 200 -
+2025-04-27 19:16:22,485 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 19:16:22] "GET /file_details/d986ce462bfa828d595d39e73d11cd820a763b7d4afd8b51aebbc1aaa178451a.enc HTTP/1.1" 200 -
+2025-04-27 19:16:27,783 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 19:16:27] "GET / HTTP/1.1" 200 -
+2025-04-27 19:16:33,891 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 19:16:33] "GET /view_logs HTTP/1.1" 200 -
+2025-04-27 19:16:52,641 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 19:16:52] "GET / HTTP/1.1" 200 -
+2025-04-27 19:16:53,802 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 19:16:53] "GET / HTTP/1.1" 200 -
+2025-04-27 19:16:54,656 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 19:16:54] "GET / HTTP/1.1" 200 -
+2025-04-27 21:47:22,651 - SecureFileSystem - WARNING - Using a new untrained model. This is not recommended for production.
+2025-04-27 21:47:22,723 - SecureFileSystem - INFO - Demo model trained (NOT FOR PRODUCTION USE)
+2025-04-27 21:47:22,724 - SecureFileSystem - INFO - Loaded file index with 2 entries
+2025-04-27 21:47:22,724 - SecureFileSystem - INFO - Secure File System initialized
+2025-04-27 23:30:58,745 - SecureFileSystem - WARNING - Using a new untrained model. This is not recommended for production.
+2025-04-27 23:30:58,815 - SecureFileSystem - INFO - Demo model trained (NOT FOR PRODUCTION USE)
+2025-04-27 23:30:58,816 - SecureFileSystem - INFO - Loaded file index with 2 entries
+2025-04-27 23:30:58,816 - SecureFileSystem - INFO - Secure File System initialized
+2025-04-27 23:30:58,842 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-27 23:30:58,842 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-27 23:30:58,843 - werkzeug - INFO -  * Restarting with stat
+2025-04-27 23:30:59,628 - SecureFileSystem - WARNING - Using a new untrained model. This is not recommended for production.
+2025-04-27 23:30:59,696 - SecureFileSystem - INFO - Demo model trained (NOT FOR PRODUCTION USE)
+2025-04-27 23:30:59,696 - SecureFileSystem - INFO - Loaded file index with 2 entries
+2025-04-27 23:30:59,696 - SecureFileSystem - INFO - Secure File System initialized
+2025-04-27 23:30:59,711 - werkzeug - WARNING -  * Debugger is active!
+2025-04-27 23:30:59,721 - werkzeug - INFO -  * Debugger PIN: 719-966-688
+2025-04-27 23:31:30,541 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:31:30] "GET / HTTP/1.1" 200 -
+2025-04-27 23:32:09,400 - SecureFileSystem - INFO - Processing file: Screenshot 2025-01-10 at 8.03.18 PM.png (image/png, 2274321 bytes)
+2025-04-27 23:32:09,564 - SecureFileSystem - INFO - Malware scan result: Safe (Probability: 0.12)
+2025-04-27 23:32:09,628 - SecureFileSystem - INFO - File encrypted successfully (Size: 2274321 → 2274368)
+2025-04-27 23:32:09,629 - SecureFileSystem - INFO - Saved file index with 3 entries
+2025-04-27 23:32:09,629 - SecureFileSystem - INFO - File safely encrypted and stored: Screenshot 2025-01-10 at 8.03.18 PM.png → 4b8b29b77657f33f7619a335ce81c0804ed87ae0214bca860e3d3f8ee934be75.enc
+2025-04-27 23:32:09,630 - SecureFileSystem - INFO - File 'Screenshot 2025-01-10 at 8.03.18 PM.png' encrypted with key: 2121
+2025-04-27 23:32:09,631 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:32:09] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-04-27 23:32:09,636 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:32:09] "GET / HTTP/1.1" 200 -
+2025-04-27 23:32:29,236 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:32:29] "GET /file_details/4b8b29b77657f33f7619a335ce81c0804ed87ae0214bca860e3d3f8ee934be75.enc HTTP/1.1" 200 -
+2025-04-27 23:32:38,646 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:32:38] "GET / HTTP/1.1" 200 -
+2025-04-27 23:32:50,516 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:32:50] "GET /file_details/4b8b29b77657f33f7619a335ce81c0804ed87ae0214bca860e3d3f8ee934be75.enc HTTP/1.1" 200 -
+2025-04-27 23:32:57,066 - SecureFileSystem - ERROR - Error retrieving file 4b8b29b77657f33f7619a335ce81c0804ed87ae0214bca860e3d3f8ee934be75.enc: Invalid padding bytes.
+2025-04-27 23:32:57,068 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:32:57] "[32mGET /download/4b8b29b77657f33f7619a335ce81c0804ed87ae0214bca860e3d3f8ee934be75.enc HTTP/1.1[0m" 302 -
+2025-04-27 23:32:57,084 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:32:57] "GET / HTTP/1.1" 200 -
+2025-04-27 23:33:07,640 - SecureFileSystem - ERROR - Error retrieving file 4b8b29b77657f33f7619a335ce81c0804ed87ae0214bca860e3d3f8ee934be75.enc: Invalid padding bytes.
+2025-04-27 23:33:07,641 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:33:07] "[32mGET /download/4b8b29b77657f33f7619a335ce81c0804ed87ae0214bca860e3d3f8ee934be75.enc HTTP/1.1[0m" 302 -
+2025-04-27 23:33:07,645 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:33:07] "GET / HTTP/1.1" 200 -
+2025-04-27 23:33:12,872 - SecureFileSystem - ERROR - Error retrieving file 4b8b29b77657f33f7619a335ce81c0804ed87ae0214bca860e3d3f8ee934be75.enc: Invalid padding bytes.
+2025-04-27 23:33:12,873 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:33:12] "[32mGET /download/4b8b29b77657f33f7619a335ce81c0804ed87ae0214bca860e3d3f8ee934be75.enc HTTP/1.1[0m" 302 -
+2025-04-27 23:33:12,877 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:33:12] "GET / HTTP/1.1" 200 -
+2025-04-27 23:33:14,178 - SecureFileSystem - ERROR - Error retrieving file 4b8b29b77657f33f7619a335ce81c0804ed87ae0214bca860e3d3f8ee934be75.enc: Invalid padding bytes.
+2025-04-27 23:33:14,180 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:33:14] "[32mGET /download/4b8b29b77657f33f7619a335ce81c0804ed87ae0214bca860e3d3f8ee934be75.enc HTTP/1.1[0m" 302 -
+2025-04-27 23:33:14,185 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:33:14] "GET / HTTP/1.1" 200 -
+2025-04-27 23:33:15,880 - SecureFileSystem - ERROR - Error retrieving file d986ce462bfa828d595d39e73d11cd820a763b7d4afd8b51aebbc1aaa178451a.enc: Invalid padding bytes.
+2025-04-27 23:33:15,880 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:33:15] "[32mGET /download/d986ce462bfa828d595d39e73d11cd820a763b7d4afd8b51aebbc1aaa178451a.enc HTTP/1.1[0m" 302 -
+2025-04-27 23:33:15,884 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:33:15] "GET / HTTP/1.1" 200 -
+2025-04-27 23:33:19,337 - SecureFileSystem - ERROR - Error retrieving file d986ce462bfa828d595d39e73d11cd820a763b7d4afd8b51aebbc1aaa178451a.enc: Invalid padding bytes.
+2025-04-27 23:33:19,338 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:33:19] "[32mGET /download/d986ce462bfa828d595d39e73d11cd820a763b7d4afd8b51aebbc1aaa178451a.enc HTTP/1.1[0m" 302 -
+2025-04-27 23:33:19,342 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:33:19] "GET / HTTP/1.1" 200 -
+2025-04-27 23:33:21,648 - SecureFileSystem - ERROR - Error retrieving file 2c44ca2b7323cf2cdc17171c1c0f844f8b7cb36fb58988f66aa8120fecbb6156.enc: Invalid padding bytes.
+2025-04-27 23:33:21,649 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:33:21] "[32mGET /download/2c44ca2b7323cf2cdc17171c1c0f844f8b7cb36fb58988f66aa8120fecbb6156.enc HTTP/1.1[0m" 302 -
+2025-04-27 23:33:21,653 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:33:21] "GET / HTTP/1.1" 200 -
+2025-04-27 23:33:49,950 - SecureFileSystem - ERROR - Error retrieving file d986ce462bfa828d595d39e73d11cd820a763b7d4afd8b51aebbc1aaa178451a.enc: Invalid padding bytes.
+2025-04-27 23:33:49,952 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:33:49] "[32mGET /download/d986ce462bfa828d595d39e73d11cd820a763b7d4afd8b51aebbc1aaa178451a.enc HTTP/1.1[0m" 302 -
+2025-04-27 23:33:49,957 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:33:49] "GET / HTTP/1.1" 200 -
+2025-04-27 23:34:16,288 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:34:16] "[32mPOST /set_password HTTP/1.1[0m" 302 -
+2025-04-27 23:34:16,295 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:34:16] "GET / HTTP/1.1" 200 -
+2025-04-27 23:34:19,297 - SecureFileSystem - INFO - File decrypted successfully (Size: 2274368 → 2274321)
+2025-04-27 23:34:19,297 - SecureFileSystem - INFO - File retrieved and decrypted: 4b8b29b77657f33f7619a335ce81c0804ed87ae0214bca860e3d3f8ee934be75.enc → Screenshot 2025-01-10 at 8.03.18 PM.png
+2025-04-27 23:34:19,297 - SecureFileSystem - INFO - File 'Screenshot 2025-01-10 at 8.03.18 PM.png' (ID: 4b8b29b77657f33f7619a335ce81c0804ed87ae0214bca860e3d3f8ee934be75.enc) decrypted with key: 2121
+2025-04-27 23:34:19,301 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:34:19] "GET /download/4b8b29b77657f33f7619a335ce81c0804ed87ae0214bca860e3d3f8ee934be75.enc HTTP/1.1" 200 -
+2025-04-27 23:51:03,218 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:51:03] "GET /view_logs HTTP/1.1" 200 -
+2025-04-27 23:51:07,554 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:51:07] "GET / HTTP/1.1" 200 -
+2025-04-27 23:51:40,296 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:51:40] "GET /file_details/d986ce462bfa828d595d39e73d11cd820a763b7d4afd8b51aebbc1aaa178451a.enc HTTP/1.1" 200 -
+2025-04-27 23:54:03,880 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 23:54:03] "GET / HTTP/1.1" 200 -
+2025-04-28 00:00:13,756 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 00:00:13] "GET /view_logs HTTP/1.1" 200 -
+2025-04-28 00:03:50,144 - SecureFileSystem - ERROR - Error retrieving file 2c44ca2b7323cf2cdc17171c1c0f844f8b7cb36fb58988f66aa8120fecbb6156.enc: Invalid padding bytes.
+2025-04-28 00:03:50,147 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 00:03:50] "[32mGET /download/2c44ca2b7323cf2cdc17171c1c0f844f8b7cb36fb58988f66aa8120fecbb6156.enc HTTP/1.1[0m" 302 -
+2025-04-28 00:03:50,154 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 00:03:50] "GET / HTTP/1.1" 200 -
+2025-04-28 01:28:06,999 - SecureFileSystem - WARNING - Using a new untrained model. This is not recommended for production.
+2025-04-28 01:28:07,069 - SecureFileSystem - INFO - Demo model trained (NOT FOR PRODUCTION USE)
+2025-04-28 01:28:07,069 - SecureFileSystem - INFO - Loaded file index with 3 entries
+2025-04-28 01:28:07,069 - SecureFileSystem - INFO - Secure File System initialized
+2025-04-28 01:28:07,096 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-28 01:28:07,096 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-28 01:28:07,097 - werkzeug - INFO -  * Restarting with stat
+2025-04-28 01:28:07,896 - SecureFileSystem - WARNING - Using a new untrained model. This is not recommended for production.
+2025-04-28 01:28:07,964 - SecureFileSystem - INFO - Demo model trained (NOT FOR PRODUCTION USE)
+2025-04-28 01:28:07,964 - SecureFileSystem - INFO - Loaded file index with 3 entries
+2025-04-28 01:28:07,964 - SecureFileSystem - INFO - Secure File System initialized
+2025-04-28 01:28:07,980 - werkzeug - WARNING -  * Debugger is active!
+2025-04-28 01:28:07,990 - werkzeug - INFO -  * Debugger PIN: 719-966-688
+2025-04-28 01:28:33,619 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 01:28:33] "GET / HTTP/1.1" 200 -
+2025-04-28 01:28:33,716 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 01:28:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-28 01:28:49,466 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 01:28:49] "GET /view_logs HTTP/1.1" 200 -
+2025-04-28 01:28:50,984 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 01:28:50] "GET / HTTP/1.1" 200 -
+2025-04-28 01:29:22,967 - SecureFileSystem - INFO - Processing file: Screenshot 2025-04-28 at 12.51.15 AM.png (image/png, 1891558 bytes)
+2025-04-28 01:29:23,112 - SecureFileSystem - INFO - Malware scan result: Safe (Probability: 0.04)
+2025-04-28 01:29:23,174 - SecureFileSystem - INFO - File encrypted successfully (Size: 1891558 → 1891600)
+2025-04-28 01:29:23,175 - SecureFileSystem - INFO - Saved file index with 4 entries
+2025-04-28 01:29:23,175 - SecureFileSystem - INFO - File safely encrypted and stored: Screenshot 2025-04-28 at 12.51.15 AM.png → cebf203eabb35a64762960f2cba46dae64615aa7fae52c8364f00855256dd0e3.enc
+2025-04-28 01:29:23,175 - SecureFileSystem - INFO - File 'Screenshot 2025-04-28 at 12.51.15 AM.png' encrypted with key: 12345
+2025-04-28 01:29:23,177 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 01:29:23] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-04-28 01:29:23,182 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 01:29:23] "GET / HTTP/1.1" 200 -
+2025-04-28 01:29:37,152 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 01:29:37] "GET /file_details/cebf203eabb35a64762960f2cba46dae64615aa7fae52c8364f00855256dd0e3.enc HTTP/1.1" 200 -
+2025-04-28 01:29:54,295 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 01:29:54] "GET / HTTP/1.1" 200 -
+2025-04-28 01:30:05,768 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 01:30:05] "[32mPOST /set_password HTTP/1.1[0m" 302 -
+2025-04-28 01:30:05,772 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 01:30:05] "GET / HTTP/1.1" 200 -
+2025-04-28 01:30:09,440 - SecureFileSystem - INFO - File decrypted successfully (Size: 1891600 → 1891558)
+2025-04-28 01:30:09,441 - SecureFileSystem - INFO - File retrieved and decrypted: cebf203eabb35a64762960f2cba46dae64615aa7fae52c8364f00855256dd0e3.enc → Screenshot 2025-04-28 at 12.51.15 AM.png
+2025-04-28 01:30:09,441 - SecureFileSystem - INFO - File 'Screenshot 2025-04-28 at 12.51.15 AM.png' (ID: cebf203eabb35a64762960f2cba46dae64615aa7fae52c8364f00855256dd0e3.enc) decrypted with key: 12345
+2025-04-28 01:30:09,445 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 01:30:09] "GET /download/cebf203eabb35a64762960f2cba46dae64615aa7fae52c8364f00855256dd0e3.enc HTTP/1.1" 200 -
+2025-04-28 01:30:16,268 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 01:30:16] "GET /file_details/cebf203eabb35a64762960f2cba46dae64615aa7fae52c8364f00855256dd0e3.enc HTTP/1.1" 200 -
+2025-04-28 01:30:25,467 - SecureFileSystem - INFO - Saved file index with 3 entries
+2025-04-28 01:30:25,467 - SecureFileSystem - INFO - File deleted: cebf203eabb35a64762960f2cba46dae64615aa7fae52c8364f00855256dd0e3.enc (Screenshot 2025-04-28 at 12.51.15 AM.png)
+2025-04-28 01:30:25,468 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 01:30:25] "[32mPOST /delete/cebf203eabb35a64762960f2cba46dae64615aa7fae52c8364f00855256dd0e3.enc HTTP/1.1[0m" 302 -
+2025-04-28 01:30:25,473 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 01:30:25] "GET / HTTP/1.1" 200 -
+2025-04-28 04:24:37,308 - SecureFileSystem - WARNING - Using a new untrained model. This is not recommended for production.
+2025-04-28 04:24:37,379 - SecureFileSystem - INFO - Demo model trained (NOT FOR PRODUCTION USE)
+2025-04-28 04:24:37,380 - SecureFileSystem - INFO - Loaded file index with 3 entries
+2025-04-28 04:24:37,380 - SecureFileSystem - INFO - Secure File System initialized
+2025-04-28 04:24:37,432 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-28 04:24:37,433 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-28 04:24:37,433 - werkzeug - INFO -  * Restarting with stat
+2025-04-28 04:24:38,232 - SecureFileSystem - WARNING - Using a new untrained model. This is not recommended for production.
+2025-04-28 04:24:38,299 - SecureFileSystem - INFO - Demo model trained (NOT FOR PRODUCTION USE)
+2025-04-28 04:24:38,299 - SecureFileSystem - INFO - Loaded file index with 3 entries
+2025-04-28 04:24:38,299 - SecureFileSystem - INFO - Secure File System initialized
+2025-04-28 04:24:38,317 - werkzeug - WARNING -  * Debugger is active!
+2025-04-28 04:24:38,326 - werkzeug - INFO -  * Debugger PIN: 719-966-688
+2025-04-28 04:24:44,316 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 04:24:44] "GET / HTTP/1.1" 200 -

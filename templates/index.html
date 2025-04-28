@@ -1,0 +1,148 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="bi bi-key me-2"></i>Encryption Password</h5>
+            </div>
+            <div class="card-body">
+                <form action="/set_password" method="post" class="mb-0">
+                    <div class="input-group">
+                        <input type="password" class="form-control" id="globalPassword" name="password" value="{{ current_password }}" required>
+                        <span class="input-group-text password-toggle" data-target="globalPassword">
+                            <i class="bi bi-eye"></i>
+                        </span>
+                        <button type="submit" class="btn btn-primary">Set Password</button>
+                    </div>
+                    <div class="form-text">This password will be used to encrypt and decrypt files.</div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header bg-success text-white">
+                <h5 class="mb-0"><i class="bi bi-upload me-2"></i>Upload File</h5>
+            </div>
+            <div class="card-body">
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="file" class="form-label">Select File</label>
+                        <input type="file" class="form-control" id="file" name="file" required>
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="overridePasswordCheck">
+                            <label class="form-check-label" for="overridePasswordCheck">
+                                Override password for this file
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mb-3" id="overridePasswordField" style="display: none;">
+                        <label for="overridePassword" class="form-label">Custom Password</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="overridePassword" name="override_password">
+                            <span class="input-group-text password-toggle" data-target="overridePassword">
+                                <i class="bi bi-eye"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success">Upload</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header bg-dark text-white">
+        <h5 class="mb-0"><i class="bi bi-files me-2"></i>Secured Files</h5>
+    </div>
+    <div class="card-body p-0">
+        <div class="table-responsive file-list">
+            <table class="table table-hover table-striped mb-0">
+                <thead>
+                    <tr>
+                        <th>Original Name</th>
+                        <th>File Type</th>
+                        <th>Upload Time</th>
+                        <th>Size</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if files %}
+                        {% for file in files %}
+                            <tr>
+                                <td>{{ file.original_name }}</td>
+                                <td>{{ file.file_type }}</td>
+                                <td>{{ file.upload_time }}</td>
+                                <td>{{ file.size|format_size }}</td>
+                                <td>
+                                    <div class="btn-group btn-group-sm">
+                                        <a href="{{ url_for('download_file', secure_id=file.secure_id) }}" class="btn btn-outline-primary" title="Download">
+                                            <i class="bi bi-download"></i>
+                                        </a>
+                                        <a href="{{ url_for('file_details', secure_id=file.secure_id) }}" class="btn btn-outline-info" title="View Details">
+                                            <i class="bi bi-info-circle"></i>
+                                        </a>
+                                        <button type="button" class="btn btn-outline-danger" title="Delete" 
+                                                data-bs-toggle="modal" data-bs-target="#deleteModal{{ file.secure_id|replace('.', '_') }}">
+                                            <i class="bi bi-trash"></i>
+                                        </button>
+                                    </div>
+                                    
+                                    <!-- Delete Confirmation Modal -->
+                                    <div class="modal fade" id="deleteModal{{ file.secure_id|replace('.', '_') }}" tabindex="-1" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header bg-danger text-white">
+                                                    <h5 class="modal-title">Confirm Delete</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Are you sure you want to delete <strong>{{ file.original_name }}</strong>?
+                                                    This action cannot be undone.
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                                    <form action="{{ url_for('delete_file', secure_id=file.secure_id) }}" method="post" class="d-inline">
+                                                        <button type="submit" class="btn btn-danger">Delete</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    {% else %}
+                        <tr>
+                            <td colspan="5" class="text-center py-4">
+                                <i class="bi bi-inbox fs-1 d-block mb-2 text-muted"></i>
+                                No files uploaded yet.
+                            </td>
+                        </tr>
+                    {% endif %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const overrideCheck = document.getElementById('overridePasswordCheck');
+        const overrideField = document.getElementById('overridePasswordField');
+        
+        overrideCheck.addEventListener('change', function() {
+            overrideField.style.display = this.checked ? 'block' : 'none';
+        });
+    });
+</script>
+{% endblock %}
